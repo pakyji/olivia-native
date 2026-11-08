@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.jetbrains.kotlin.jvm)
     alias(libs.plugins.jetbrains.kotlin.serialization)
-    alias(libs.plugins.jetbrains.compose)
+    alias(libs.plugins.compose)
 }
 
 group = "net.kuafuai.andee"
