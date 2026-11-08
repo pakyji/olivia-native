@@ -8,7 +8,7 @@
         android:id="@+id/ball_image"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:src="@drawable/ic_launcher"
+        android:src="@mipmap/ic_launcher"
         android:contentDescription="@string/olivia_ball_desc"
         android:scaleType="fitCenter" />
 

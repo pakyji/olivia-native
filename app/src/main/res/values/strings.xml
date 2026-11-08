@@ -2,4 +2,5 @@
     <string name="app_name">Olivia Native</string>
     <string name="accessibility_service_name">Olivia Accessibility</string>
     <string name="accessibility_service_description">Allows Olivia to read screen content and perform gestures for app control.</string>
+    <string name="olivia_ball_desc">Olivia floating ball</string>
 </resources>
