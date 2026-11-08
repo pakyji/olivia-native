@@ -1,7 +1,7 @@
 plugins {
     id("org.jetbrains.kotlin.jvm") version "1.9.20"
     id("org.jetbrains.kotlin.plugin.serialization") version "1.9.20"
-    id("org.jetbrains.compose") version "1.5.4"
+    id("org.jetbrains.compose") version "1.5.4" apply false
 }
 
 group = "net.kuafuai.andee"
@@ -25,18 +25,6 @@ dependencies {
     implementation(libs.coroutinesCore)
     implementation(libs.kotlinJvm)
     implementation(libs.kotlinSerialization)
-}
-
-compose.desktop {
-    application {
-        mainClass = "net.kuafuai.andee.desktop.MainKt"
-        nativeDistributions {
-            dmg {
-                packageName = "Olivia Native"
-                packageVersion = "0.1.0"
-            }
-        }
-    }
 }
 
 tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
