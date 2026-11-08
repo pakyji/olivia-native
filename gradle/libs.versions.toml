@@ -7,6 +7,7 @@ lifecycle = "2.7.0"
 compose = "1.5.4"
 composeCompiler = "1.5.6"
 composeBom = "2023.08.00"
+composeDesktop = "1.5.4"
 material3 = "1.1.2"
 room = "2.6.1"
 okhttp = "4.12.0"
@@ -36,6 +37,7 @@ lifecycleRuntime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx
 lifecycleViewModel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
 composeBom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
 composeCompiler = { group = "org.jetbrains.kotlin", name = "compose-compiler", version.ref = "composeCompiler" }
+composeDesktop = { group = "org.jetbrains.compose", name = "compose-desktop", version.ref = "composeDesktop" }
 ui = { group = "androidx.compose.ui", name = "ui" }
 uiGraphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 uiTooling = { group = "androidx.compose.ui", name = "ui-tooling" }
@@ -71,3 +73,4 @@ jetbrains.kotlin.jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin"
 jetbrains.kotlin.serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 composeCompilerPlugin = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "composeCompiler" }
+jetbrains.compose = { id = "org.jetbrains.compose", version.ref = "compose" }
