@@ -4,7 +4,13 @@ import android.app.Application
 import android.content.Context
 import android.util.Log
 import net.kuafuai.andee.brain.BrainHost
+import net.kuafuai.andee.brain.BrainText
 import net.kuafuai.andee.brain.LocalBrain
+import net.kuafuai.andee.brain.RecallResult
+import net.kuafuai.andee.brain.SceneInfo
+import net.kuafuai.andee.brain.SceneStep
+import net.kuafuai.andee.brain.TodoItem
+import net.kuafuai.andee.brain.ToolResult
 import net.kuafuai.andee.memory.Notebook
 import net.kuafuai.andee.memory.NotebookDatabase
 import net.kuafuai.andee.memory.TodoStore
