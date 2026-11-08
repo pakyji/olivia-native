@@ -1,0 +1,73 @@
+[versions]
+agp = "8.3.0"
+kotlin = "1.9.20"
+coreKtx = "1.12.0"
+activity = "1.8.2"
+lifecycle = "2.7.0"
+compose = "1.5.4"
+composeCompiler = "1.5.6"
+composeBom = "2023.08.00"
+material3 = "1.1.2"
+room = "2.6.1"
+okhttp = "4.12.0"
+coroutines = "1.7.3"
+serialization = "1.6.3"
+websocket = "1.5.7"
+mlkitBarcode = "17.2.0"
+usbSerial = "3.8.1"
+junit = "4.13.2"
+junitJupiter = "5.10.1"
+espresso = "3.5.1"
+truth = "1.1.3"
+robolectric = "4.11"
+androidxTest = "1.5.2"
+androidxTestRunner = "1.5.2"
+androidxTestRules = "1.5.2"
+
+[libraries]
+agp = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
+kotlinAndroid = { group = "org.jetbrains.kotlin", name = "kotlin-android", version.ref = "kotlin" }
+kotlinJvm = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib-jdk8", version.ref = "kotlin" }
+kotlinSerialization = { group = "org.jetbrains.kotlin", name = "kotlinx-serialization-json", version.ref = "serialization" }
+coreKtx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+activity = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity" }
+activityCompose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity" }
+lifecycleRuntime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+lifecycleViewModel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+composeBom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+composeCompiler = { group = "org.jetbrains.kotlin", name = "compose-compiler", version.ref = "composeCompiler" }
+ui = { group = "androidx.compose.ui", name = "ui" }
+uiGraphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+uiTooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+uiToolingPreview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+uiTest = { group = "androidx.compose.ui", name = "ui-test" }
+uiTestJunit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+uiTestManifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+material3 = { group = "androidx.compose.material3", name = "material3" }
+materialIcons = { group = "androidx.compose.material", name = "material-icons-extended" }
+roomRuntime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+roomCompiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+roomKtx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+okio = { group = "com.squareup.okio", name = "okio", version.ref = "okhttp" }
+coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+coroutinesCore = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+websocket = { group = "org.java-websocket", name = "Java-WebSocket", version.ref = "websocket" }
+mlkitBarcode = { group = "com.google.mlkit", name = "barcode-scanning", version.ref = "mlkitBarcode" }
+usbSerial = { group = "com.github.mik3y", name = "usb-serial-for-android", version.ref = "usbSerial" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+junitJupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junitJupiter" }
+espressoCore = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso" }
+truth = { group = "com.google.truth", name = "truth", version.ref = "truth" }
+robolectric = { group = "org.robolectric", name = "robolectric", version.ref = "robolectric" }
+androidxTestRunner = { group = "androidx.test", name = "runner", version.ref = "androidxTestRunner" }
+androidxTestRules = { group = "androidx.test", name = "rules", version.ref = "androidxTestRules" }
+androidxTestCore = { group = "androidx.test", name = "core", version.ref = "androidxTest" }
+androidxTestExt = { group = "androidx.test.ext", name = "junit", version.ref = "androidxTest" }
+
+[plugins]
+jetbrains.kotlin.android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+jetbrains.kotlin.jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+jetbrains.kotlin.serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+composeCompilerPlugin = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "composeCompiler" }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Andee" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/olivia_acc</item>
+        <item name="colorPrimaryVariant">@color/olivia_acc2</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:colorBackground">@color/olivia_bg</item>
+        <item name="colorSurface">@color/olivia_panel2</item>
+        <item name="colorOnSurface">@color/olivia_fg</item>
+    </style>
+
+    <style name="Theme.Andee.NoActionBar" parent="Theme.Andee">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Andee.Transparent" parent="Theme.Andee">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Theme.Andee.Splash" parent="Theme.Andee">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+</resources>
