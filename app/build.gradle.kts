@@ -82,4 +82,9 @@ dependencies {
     androidTestImplementation(libs.androidxTestExt)
     androidTestImplementation(libs.espressoCore)
     // androidTestImplementation(libs.truth)
+
+    // Force resolution for duplicate IntelliJ annotations classes
+    implementation("org.jetbrains:annotations:23.0.0") {
+        isTransitive = false
+    }
 }
