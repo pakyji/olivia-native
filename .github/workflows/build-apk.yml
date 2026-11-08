@@ -14,12 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Enable multiarch and install 32-bit libraries for aapt2
-        run: |
-          sudo dpkg --add-architecture i386
-          sudo apt-get update
-          sudo apt-get install -y libc6:i386 libstdc++6:i386 zlib1g:i386 libncurses5:i386
-
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
