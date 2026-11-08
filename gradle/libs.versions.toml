@@ -73,4 +73,3 @@ jetbrains.kotlin.jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin"
 jetbrains.kotlin.serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 composeCompilerPlugin = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "composeCompiler" }
-compose = { id = "org.jetbrains.compose", version.ref = "composeDesktop" }
