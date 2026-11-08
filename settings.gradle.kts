@@ -3,7 +3,6 @@ pluginManagement {
         google()
         mavenCentral()
         gradlePluginPortal()
-        maven { url = uri("https://maven.pkg.jetbrains.space/public/p/compose/dev") }
     }
 }
 
@@ -19,4 +18,3 @@ dependencyResolutionManagement {
 rootProject.name = "olivia-native"
 include(":core")
 include(":app")
-include(":desktop")
