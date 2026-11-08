@@ -16,7 +16,6 @@ repositories {
 dependencies {
     implementation(project(":core"))
     implementation(platform(libs.composeBom))
-    implementation(libs.composeDesktop)
     implementation(libs.ui)
     implementation(libs.uiGraphics)
     implementation(libs.material3)
