@@ -26,13 +26,15 @@ jobs:
         with:
           accept-android-sdk-licenses: true
           log-accepted-android-sdk-licenses: true
-          packages: platforms;android-34 build-tools;34.0.0
+          packages: platforms;android-34 build-tools;34.0.0 platform-tools
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
       - name: Build debug APK
-        run: ./gradlew :app:assembleDebug --no-daemon
+        run: ./gradlew :app:assembleDebug --no-daemon --stacktrace
+        env:
+          GRADLE_OPTS: "-Xmx4g -XX:MaxMetaspaceSize=1g -Dorg.gradle.jvmargs=-Xmx4g"
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
