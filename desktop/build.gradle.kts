@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.jetbrains.kotlin.jvm)
+    id("org.jetbrains.kotlin.jvm") version "1.9.20"
     alias(libs.plugins.jetbrains.kotlin.serialization)
     id("org.jetbrains.compose") version "1.5.4"
 }
