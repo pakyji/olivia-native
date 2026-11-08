@@ -1,0 +1,488 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="net.kuafuai.andee"
+4    android:versionCode="1"
+5    android:versionName="0.1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="27"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Core permissions for Andee-like functionality -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/root/olivia-native/app/src/main/AndroidManifest.xml:7:5-67
+12-->/root/olivia-native/app/src/main/AndroidManifest.xml:7:22-64
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->/root/olivia-native/app/src/main/AndroidManifest.xml:8:5-77
+13-->/root/olivia-native/app/src/main/AndroidManifest.xml:8:22-74
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+14-->/root/olivia-native/app/src/main/AndroidManifest.xml:9:5-87
+14-->/root/olivia-native/app/src/main/AndroidManifest.xml:9:22-84
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+15-->/root/olivia-native/app/src/main/AndroidManifest.xml:10:5-89
+15-->/root/olivia-native/app/src/main/AndroidManifest.xml:10:22-86
+16    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+16-->/root/olivia-native/app/src/main/AndroidManifest.xml:11:5-77
+16-->/root/olivia-native/app/src/main/AndroidManifest.xml:11:22-74
+17    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+17-->/root/olivia-native/app/src/main/AndroidManifest.xml:12:5-71
+17-->/root/olivia-native/app/src/main/AndroidManifest.xml:12:22-68
+18    <uses-permission android:name="android.permission.CAMERA" />
+18-->/root/olivia-native/app/src/main/AndroidManifest.xml:13:5-65
+18-->/root/olivia-native/app/src/main/AndroidManifest.xml:13:22-62
+19    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+19-->/root/olivia-native/app/src/main/AndroidManifest.xml:14:5-78
+19-->/root/olivia-native/app/src/main/AndroidManifest.xml:14:22-75
+20    <uses-permission android:name="android.permission.WAKE_LOCK" />
+20-->/root/olivia-native/app/src/main/AndroidManifest.xml:15:5-68
+20-->/root/olivia-native/app/src/main/AndroidManifest.xml:15:22-65
+21    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+21-->/root/olivia-native/app/src/main/AndroidManifest.xml:16:5-81
+21-->/root/olivia-native/app/src/main/AndroidManifest.xml:16:22-78
+22    <uses-permission android:name="android.permission.BLUETOOTH" />
+22-->/root/olivia-native/app/src/main/AndroidManifest.xml:17:5-68
+22-->/root/olivia-native/app/src/main/AndroidManifest.xml:17:22-65
+23    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+23-->/root/olivia-native/app/src/main/AndroidManifest.xml:18:5-74
+23-->/root/olivia-native/app/src/main/AndroidManifest.xml:18:22-71
+24    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+24-->/root/olivia-native/app/src/main/AndroidManifest.xml:19:5-76
+24-->/root/olivia-native/app/src/main/AndroidManifest.xml:19:22-73
+25    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+25-->/root/olivia-native/app/src/main/AndroidManifest.xml:20:5-73
+25-->/root/olivia-native/app/src/main/AndroidManifest.xml:20:22-70
+26    <uses-permission android:name="android.permission.USB_PERMISSION" />
+26-->/root/olivia-native/app/src/main/AndroidManifest.xml:21:5-73
+26-->/root/olivia-native/app/src/main/AndroidManifest.xml:21:22-70
+27    <uses-permission android:name="android.permission.READ_CONTACTS" />
+27-->/root/olivia-native/app/src/main/AndroidManifest.xml:22:5-72
+27-->/root/olivia-native/app/src/main/AndroidManifest.xml:22:22-69
+28    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+28-->/root/olivia-native/app/src/main/AndroidManifest.xml:23:5-73
+28-->/root/olivia-native/app/src/main/AndroidManifest.xml:23:22-70
+29    <uses-permission android:name="android.permission.READ_SMS" />
+29-->/root/olivia-native/app/src/main/AndroidManifest.xml:24:5-67
+29-->/root/olivia-native/app/src/main/AndroidManifest.xml:24:22-64
+30    <uses-permission android:name="android.permission.SEND_SMS" />
+30-->/root/olivia-native/app/src/main/AndroidManifest.xml:25:5-67
+30-->/root/olivia-native/app/src/main/AndroidManifest.xml:25:22-64
+31    <uses-permission android:name="android.permission.READ_CALENDAR" />
+31-->/root/olivia-native/app/src/main/AndroidManifest.xml:26:5-72
+31-->/root/olivia-native/app/src/main/AndroidManifest.xml:26:22-69
+32    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+32-->/root/olivia-native/app/src/main/AndroidManifest.xml:27:5-73
+32-->/root/olivia-native/app/src/main/AndroidManifest.xml:27:22-70
+33    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+33-->/root/olivia-native/app/src/main/AndroidManifest.xml:28:5-79
+33-->/root/olivia-native/app/src/main/AndroidManifest.xml:28:22-76
+34    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+34-->/root/olivia-native/app/src/main/AndroidManifest.xml:29:5-81
+34-->/root/olivia-native/app/src/main/AndroidManifest.xml:29:22-78
+35    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+35-->/root/olivia-native/app/src/main/AndroidManifest.xml:30:5-80
+35-->/root/olivia-native/app/src/main/AndroidManifest.xml:30:22-77
+36    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+36-->/root/olivia-native/app/src/main/AndroidManifest.xml:31:5-81
+36-->/root/olivia-native/app/src/main/AndroidManifest.xml:31:22-78
+37    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+37-->/root/olivia-native/app/src/main/AndroidManifest.xml:32:5-111
+37-->/root/olivia-native/app/src/main/AndroidManifest.xml:32:22-79
+38    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+38-->/root/olivia-native/app/src/main/AndroidManifest.xml:33:5-77
+38-->/root/olivia-native/app/src/main/AndroidManifest.xml:33:22-74
+39    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+39-->/root/olivia-native/app/src/main/AndroidManifest.xml:34:5-114
+39-->/root/olivia-native/app/src/main/AndroidManifest.xml:34:22-75
+40
+41    <!-- Accessibility Service declaration -->
+42    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+42-->/root/olivia-native/app/src/main/AndroidManifest.xml:37:5-85
+42-->/root/olivia-native/app/src/main/AndroidManifest.xml:37:22-82
+43
+44    <!-- Hardware features -->
+45    <uses-feature
+45-->/root/olivia-native/app/src/main/AndroidManifest.xml:132:5-88
+46        android:name="android.hardware.microphone"
+46-->/root/olivia-native/app/src/main/AndroidManifest.xml:132:19-61
+47        android:required="true" />
+47-->/root/olivia-native/app/src/main/AndroidManifest.xml:132:62-85
+48    <uses-feature
+48-->/root/olivia-native/app/src/main/AndroidManifest.xml:133:5-85
+49        android:name="android.hardware.camera"
+49-->/root/olivia-native/app/src/main/AndroidManifest.xml:133:19-57
+50        android:required="false" />
+50-->/root/olivia-native/app/src/main/AndroidManifest.xml:133:58-82
+51    <uses-feature
+51-->/root/olivia-native/app/src/main/AndroidManifest.xml:134:5-87
+52        android:name="android.hardware.usb.host"
+52-->/root/olivia-native/app/src/main/AndroidManifest.xml:134:19-59
+53        android:required="false" />
+53-->/root/olivia-native/app/src/main/AndroidManifest.xml:134:60-84
+54    <uses-feature
+54-->/root/olivia-native/app/src/main/AndroidManifest.xml:135:5-88
+55        android:name="android.hardware.bluetooth"
+55-->/root/olivia-native/app/src/main/AndroidManifest.xml:135:19-60
+56        android:required="false" />
+56-->/root/olivia-native/app/src/main/AndroidManifest.xml:135:61-85
+57    <uses-feature
+57-->/root/olivia-native/app/src/main/AndroidManifest.xml:136:5-91
+58        android:name="android.hardware.location.gps"
+58-->/root/olivia-native/app/src/main/AndroidManifest.xml:136:19-63
+59        android:required="false" />
+59-->/root/olivia-native/app/src/main/AndroidManifest.xml:136:64-88
+60
+61    <permission
+61-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-4/17d2b6dd5fbbdfc3667e2cb4fa44962d/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+62        android:name="net.kuafuai.andee.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+62-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-4/17d2b6dd5fbbdfc3667e2cb4fa44962d/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+63        android:protectionLevel="signature" />
+63-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-4/17d2b6dd5fbbdfc3667e2cb4fa44962d/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+64
+65    <uses-permission android:name="net.kuafuai.andee.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+65-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-4/17d2b6dd5fbbdfc3667e2cb4fa44962d/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+65-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-4/17d2b6dd5fbbdfc3667e2cb4fa44962d/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+66    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+67    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+67-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /root/.gradle/caches/transforms-4/298d7838dba37b6e4d403423953cf3e0/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+67-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /root/.gradle/caches/transforms-4/298d7838dba37b6e4d403423953cf3e0/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
+68
+69    <application
+69-->/root/olivia-native/app/src/main/AndroidManifest.xml:39:5-129:19
+70        android:name="net.kuafuai.andee.AndeeApp"
+70-->/root/olivia-native/app/src/main/AndroidManifest.xml:40:9-33
+71        android:allowBackup="false"
+71-->/root/olivia-native/app/src/main/AndroidManifest.xml:41:9-36
+72        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+72-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-4/17d2b6dd5fbbdfc3667e2cb4fa44962d/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+73        android:dataExtractionRules="@xml/data_extraction_rules"
+73-->/root/olivia-native/app/src/main/AndroidManifest.xml:42:9-65
+74        android:debuggable="true"
+75        android:extractNativeLibs="true"
+76        android:fullBackupContent="@xml/backup_rules"
+76-->/root/olivia-native/app/src/main/AndroidManifest.xml:43:9-54
+77        android:icon="@drawable/ic_launcher"
+77-->/root/olivia-native/app/src/main/AndroidManifest.xml:44:9-45
+78        android:label="@string/app_name"
+78-->/root/olivia-native/app/src/main/AndroidManifest.xml:45:9-41
+79        android:roundIcon="@drawable/ic_launcher_round"
+79-->/root/olivia-native/app/src/main/AndroidManifest.xml:46:9-56
+80        android:supportsRtl="true"
+80-->/root/olivia-native/app/src/main/AndroidManifest.xml:47:9-35
+81        android:theme="@style/Theme.Andee"
+81-->/root/olivia-native/app/src/main/AndroidManifest.xml:48:9-43
+82        android:usesCleartextTraffic="true" >
+82-->/root/olivia-native/app/src/main/AndroidManifest.xml:49:9-44
+83
+84        <!-- Main Activity (Settings/Setup) -->
+85        <activity
+85-->/root/olivia-native/app/src/main/AndroidManifest.xml:53:9-62:20
+86            android:name="net.kuafuai.andee.ui.SettingsActivity"
+86-->/root/olivia-native/app/src/main/AndroidManifest.xml:54:13-48
+87            android:exported="true"
+87-->/root/olivia-native/app/src/main/AndroidManifest.xml:55:13-36
+88            android:theme="@style/Theme.Andee.NoActionBar"
+88-->/root/olivia-native/app/src/main/AndroidManifest.xml:56:13-59
+89            android:windowSoftInputMode="adjustResize" >
+89-->/root/olivia-native/app/src/main/AndroidManifest.xml:57:13-55
+90            <intent-filter>
+90-->/root/olivia-native/app/src/main/AndroidManifest.xml:58:13-61:29
+91                <action android:name="android.intent.action.MAIN" />
+91-->/root/olivia-native/app/src/main/AndroidManifest.xml:59:17-69
+91-->/root/olivia-native/app/src/main/AndroidManifest.xml:59:25-66
+92
+93                <category android:name="android.intent.category.LAUNCHER" />
+93-->/root/olivia-native/app/src/main/AndroidManifest.xml:60:17-77
+93-->/root/olivia-native/app/src/main/AndroidManifest.xml:60:27-74
+94            </intent-filter>
+95        </activity>
+96
+97        <!-- Overlay Permission Activity -->
+98        <activity
+98-->/root/olivia-native/app/src/main/AndroidManifest.xml:65:9-68:62
+99            android:name="net.kuafuai.andee.ui.OverlayPermissionActivity"
+99-->/root/olivia-native/app/src/main/AndroidManifest.xml:66:13-57
+100            android:exported="false"
+100-->/root/olivia-native/app/src/main/AndroidManifest.xml:67:13-37
+101            android:theme="@style/Theme.Andee.Transparent" />
+101-->/root/olivia-native/app/src/main/AndroidManifest.xml:68:13-59
+102
+103        <!-- Foreground Service: Core Brain -->
+104        <service
+104-->/root/olivia-native/app/src/main/AndroidManifest.xml:71:9-75:79
+105            android:name="net.kuafuai.andee.service.BodyCoreService"
+105-->/root/olivia-native/app/src/main/AndroidManifest.xml:72:13-52
+106            android:exported="false"
+106-->/root/olivia-native/app/src/main/AndroidManifest.xml:73:13-37
+107            android:foregroundServiceType="dataSync"
+107-->/root/olivia-native/app/src/main/AndroidManifest.xml:74:13-53
+108            android:permission="android.permission.BIND_FOREGROUND_SERVICE" />
+108-->/root/olivia-native/app/src/main/AndroidManifest.xml:75:13-76
+109
+110        <!-- Foreground Service: Overlay / Floating Ball -->
+111        <service
+111-->/root/olivia-native/app/src/main/AndroidManifest.xml:78:9-82:79
+112            android:name="net.kuafuai.andee.service.OverlayService"
+112-->/root/olivia-native/app/src/main/AndroidManifest.xml:79:13-51
+113            android:exported="false"
+113-->/root/olivia-native/app/src/main/AndroidManifest.xml:80:13-37
+114            android:foregroundServiceType="specialUse"
+114-->/root/olivia-native/app/src/main/AndroidManifest.xml:81:13-55
+115            android:permission="android.permission.BIND_FOREGROUND_SERVICE" />
+115-->/root/olivia-native/app/src/main/AndroidManifest.xml:82:13-76
+116
+117        <!-- Accessibility Service: Hands -->
+118        <service
+118-->/root/olivia-native/app/src/main/AndroidManifest.xml:85:9-96:19
+119            android:name="net.kuafuai.andee.service.ScreenBodyService"
+119-->/root/olivia-native/app/src/main/AndroidManifest.xml:86:13-54
+120            android:exported="true"
+120-->/root/olivia-native/app/src/main/AndroidManifest.xml:87:13-36
+121            android:label="@string/accessibility_service_name"
+121-->/root/olivia-native/app/src/main/AndroidManifest.xml:88:13-63
+122            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+122-->/root/olivia-native/app/src/main/AndroidManifest.xml:89:13-79
+123            <intent-filter>
+123-->/root/olivia-native/app/src/main/AndroidManifest.xml:90:13-92:29
+124                <action android:name="android.accessibilityservice.AccessibilityService" />
+124-->/root/olivia-native/app/src/main/AndroidManifest.xml:91:17-92
+124-->/root/olivia-native/app/src/main/AndroidManifest.xml:91:25-89
+125            </intent-filter>
+126
+127            <meta-data
+127-->/root/olivia-native/app/src/main/AndroidManifest.xml:93:13-95:72
+128                android:name="android.accessibilityservice"
+128-->/root/olivia-native/app/src/main/AndroidManifest.xml:94:17-60
+129                android:resource="@xml/accessibility_service_config" />
+129-->/root/olivia-native/app/src/main/AndroidManifest.xml:95:17-69
+130        </service>
+131
+132        <!-- Broadcast Receivers -->
+133        <receiver
+133-->/root/olivia-native/app/src/main/AndroidManifest.xml:99:9-107:20
+134            android:name="net.kuafuai.andee.service.BootReceiver"
+134-->/root/olivia-native/app/src/main/AndroidManifest.xml:100:13-49
+135            android:enabled="true"
+135-->/root/olivia-native/app/src/main/AndroidManifest.xml:102:13-35
+136            android:exported="true" >
+136-->/root/olivia-native/app/src/main/AndroidManifest.xml:101:13-36
+137            <intent-filter>
+137-->/root/olivia-native/app/src/main/AndroidManifest.xml:103:13-106:29
+138                <action android:name="android.intent.action.BOOT_COMPLETED" />
+138-->/root/olivia-native/app/src/main/AndroidManifest.xml:104:17-79
+138-->/root/olivia-native/app/src/main/AndroidManifest.xml:104:25-76
+139                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+139-->/root/olivia-native/app/src/main/AndroidManifest.xml:105:17-82
+139-->/root/olivia-native/app/src/main/AndroidManifest.xml:105:25-79
+140            </intent-filter>
+141        </receiver>
+142        <receiver
+142-->/root/olivia-native/app/src/main/AndroidManifest.xml:109:9-116:20
+143            android:name="net.kuafuai.andee.service.NotificationReceiver"
+143-->/root/olivia-native/app/src/main/AndroidManifest.xml:110:13-57
+144            android:enabled="true"
+144-->/root/olivia-native/app/src/main/AndroidManifest.xml:112:13-35
+145            android:exported="true" >
+145-->/root/olivia-native/app/src/main/AndroidManifest.xml:111:13-36
+146            <intent-filter>
+146-->/root/olivia-native/app/src/main/AndroidManifest.xml:113:13-115:29
+147                <action android:name="android.service.notification.NotificationListenerService" />
+147-->/root/olivia-native/app/src/main/AndroidManifest.xml:114:17-99
+147-->/root/olivia-native/app/src/main/AndroidManifest.xml:114:25-96
+148            </intent-filter>
+149        </receiver>
+150
+151        <!-- File Provider for sharing -->
+152        <provider
+153            android:name="androidx.core.content.FileProvider"
+153-->/root/olivia-native/app/src/main/AndroidManifest.xml:120:13-62
+154            android:authorities="net.kuafuai.andee.fileprovider"
+154-->/root/olivia-native/app/src/main/AndroidManifest.xml:121:13-64
+155            android:exported="false"
+155-->/root/olivia-native/app/src/main/AndroidManifest.xml:122:13-37
+156            android:grantUriPermissions="true" >
+156-->/root/olivia-native/app/src/main/AndroidManifest.xml:123:13-47
+157            <meta-data
+157-->/root/olivia-native/app/src/main/AndroidManifest.xml:124:13-126:54
+158                android:name="android.support.FILE_PROVIDER_PATHS"
+158-->/root/olivia-native/app/src/main/AndroidManifest.xml:125:17-67
+159                android:resource="@xml/file_paths" />
+159-->/root/olivia-native/app/src/main/AndroidManifest.xml:126:17-51
+160        </provider>
+161
+162        <service
+162-->[androidx.camera:camera-camera2:1.3.4] /root/.gradle/caches/transforms-4/34f23652047d3b839a7bbbd5a6bf0dad/transformed/camera-camera2-1.3.4/AndroidManifest.xml:24:9-33:19
+163            android:name="androidx.camera.core.impl.MetadataHolderService"
+163-->[androidx.camera:camera-camera2:1.3.4] /root/.gradle/caches/transforms-4/34f23652047d3b839a7bbbd5a6bf0dad/transformed/camera-camera2-1.3.4/AndroidManifest.xml:25:13-75
+164            android:enabled="false"
+164-->[androidx.camera:camera-camera2:1.3.4] /root/.gradle/caches/transforms-4/34f23652047d3b839a7bbbd5a6bf0dad/transformed/camera-camera2-1.3.4/AndroidManifest.xml:26:13-36
+165            android:exported="false" >
+165-->[androidx.camera:camera-camera2:1.3.4] /root/.gradle/caches/transforms-4/34f23652047d3b839a7bbbd5a6bf0dad/transformed/camera-camera2-1.3.4/AndroidManifest.xml:27:13-37
+166            <meta-data
+166-->[androidx.camera:camera-camera2:1.3.4] /root/.gradle/caches/transforms-4/34f23652047d3b839a7bbbd5a6bf0dad/transformed/camera-camera2-1.3.4/AndroidManifest.xml:30:13-32:89
+167                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+167-->[androidx.camera:camera-camera2:1.3.4] /root/.gradle/caches/transforms-4/34f23652047d3b839a7bbbd5a6bf0dad/transformed/camera-camera2-1.3.4/AndroidManifest.xml:31:17-103
+168                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+168-->[androidx.camera:camera-camera2:1.3.4] /root/.gradle/caches/transforms-4/34f23652047d3b839a7bbbd5a6bf0dad/transformed/camera-camera2-1.3.4/AndroidManifest.xml:32:17-86
+169        </service>
+170        <service
+170-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /root/.gradle/caches/transforms-4/d1729306d5fcf5ec8b93e4ed58e61af7/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:9:9-15:19
+171            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+171-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /root/.gradle/caches/transforms-4/d1729306d5fcf5ec8b93e4ed58e61af7/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:10:13-91
+172            android:directBootAware="true"
+172-->[com.google.mlkit:common:18.9.0] /root/.gradle/caches/transforms-4/17466f62d731f0174f0fd74e1d7e3fe6/transformed/common-18.9.0/AndroidManifest.xml:17:13-43
+173            android:exported="false" >
+173-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /root/.gradle/caches/transforms-4/d1729306d5fcf5ec8b93e4ed58e61af7/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:11:13-37
+174            <meta-data
+174-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /root/.gradle/caches/transforms-4/d1729306d5fcf5ec8b93e4ed58e61af7/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:12:13-14:85
+175                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+175-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /root/.gradle/caches/transforms-4/d1729306d5fcf5ec8b93e4ed58e61af7/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:13:17-120
+176                android:value="com.google.firebase.components.ComponentRegistrar" />
+176-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /root/.gradle/caches/transforms-4/d1729306d5fcf5ec8b93e4ed58e61af7/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:14:17-82
+177            <meta-data
+177-->[com.google.mlkit:vision-common:17.3.0] /root/.gradle/caches/transforms-4/acf70c52bf431ece09805afe39538355/transformed/vision-common-17.3.0/AndroidManifest.xml:12:13-14:85
+178                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+178-->[com.google.mlkit:vision-common:17.3.0] /root/.gradle/caches/transforms-4/acf70c52bf431ece09805afe39538355/transformed/vision-common-17.3.0/AndroidManifest.xml:13:17-124
+179                android:value="com.google.firebase.components.ComponentRegistrar" />
+179-->[com.google.mlkit:vision-common:17.3.0] /root/.gradle/caches/transforms-4/acf70c52bf431ece09805afe39538355/transformed/vision-common-17.3.0/AndroidManifest.xml:14:17-82
+180            <meta-data
+180-->[com.google.mlkit:common:18.9.0] /root/.gradle/caches/transforms-4/17466f62d731f0174f0fd74e1d7e3fe6/transformed/common-18.9.0/AndroidManifest.xml:20:13-22:85
+181                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+181-->[com.google.mlkit:common:18.9.0] /root/.gradle/caches/transforms-4/17466f62d731f0174f0fd74e1d7e3fe6/transformed/common-18.9.0/AndroidManifest.xml:21:17-120
+182                android:value="com.google.firebase.components.ComponentRegistrar" />
+182-->[com.google.mlkit:common:18.9.0] /root/.gradle/caches/transforms-4/17466f62d731f0174f0fd74e1d7e3fe6/transformed/common-18.9.0/AndroidManifest.xml:22:17-82
+183        </service>
+184
+185        <provider
+185-->[com.google.mlkit:common:18.9.0] /root/.gradle/caches/transforms-4/17466f62d731f0174f0fd74e1d7e3fe6/transformed/common-18.9.0/AndroidManifest.xml:9:9-13:38
+186            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+186-->[com.google.mlkit:common:18.9.0] /root/.gradle/caches/transforms-4/17466f62d731f0174f0fd74e1d7e3fe6/transformed/common-18.9.0/AndroidManifest.xml:10:13-78
+187            android:authorities="net.kuafuai.andee.mlkitinitprovider"
+187-->[com.google.mlkit:common:18.9.0] /root/.gradle/caches/transforms-4/17466f62d731f0174f0fd74e1d7e3fe6/transformed/common-18.9.0/AndroidManifest.xml:11:13-69
+188            android:exported="false"
+188-->[com.google.mlkit:common:18.9.0] /root/.gradle/caches/transforms-4/17466f62d731f0174f0fd74e1d7e3fe6/transformed/common-18.9.0/AndroidManifest.xml:12:13-37
+189            android:initOrder="99" />
+189-->[com.google.mlkit:common:18.9.0] /root/.gradle/caches/transforms-4/17466f62d731f0174f0fd74e1d7e3fe6/transformed/common-18.9.0/AndroidManifest.xml:13:13-35
+190
+191        <activity
+191-->[com.google.android.gms:play-services-base:18.1.0] /root/.gradle/caches/transforms-4/8baf08308de44961120e2ce31a5b638b/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+192            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+192-->[com.google.android.gms:play-services-base:18.1.0] /root/.gradle/caches/transforms-4/8baf08308de44961120e2ce31a5b638b/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+193            android:exported="false"
+193-->[com.google.android.gms:play-services-base:18.1.0] /root/.gradle/caches/transforms-4/8baf08308de44961120e2ce31a5b638b/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+194            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+194-->[com.google.android.gms:play-services-base:18.1.0] /root/.gradle/caches/transforms-4/8baf08308de44961120e2ce31a5b638b/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+195
+196        <meta-data
+196-->[com.google.android.gms:play-services-basement:18.1.0] /root/.gradle/caches/transforms-4/ae0af3789d35b6fc09211f4d19ff65ad/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+197            android:name="com.google.android.gms.version"
+197-->[com.google.android.gms:play-services-basement:18.1.0] /root/.gradle/caches/transforms-4/ae0af3789d35b6fc09211f4d19ff65ad/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+198            android:value="@integer/google_play_services_version" />
+198-->[com.google.android.gms:play-services-basement:18.1.0] /root/.gradle/caches/transforms-4/ae0af3789d35b6fc09211f4d19ff65ad/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+199
+200        <provider
+200-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/transforms-4/56b77eefe528e12862ac533ed46518dc/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+201            android:name="androidx.startup.InitializationProvider"
+201-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/transforms-4/56b77eefe528e12862ac533ed46518dc/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+202            android:authorities="net.kuafuai.andee.androidx-startup"
+202-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/transforms-4/56b77eefe528e12862ac533ed46518dc/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+203            android:exported="false" >
+203-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/transforms-4/56b77eefe528e12862ac533ed46518dc/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+204            <meta-data
+204-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/transforms-4/56b77eefe528e12862ac533ed46518dc/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+205                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+205-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/transforms-4/56b77eefe528e12862ac533ed46518dc/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+206                android:value="androidx.startup" />
+206-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/transforms-4/56b77eefe528e12862ac533ed46518dc/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+207            <meta-data
+207-->[androidx.lifecycle:lifecycle-process:2.6.1] /root/.gradle/caches/transforms-4/5286911722b17ccb3c524ef94a56c473/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+208                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+208-->[androidx.lifecycle:lifecycle-process:2.6.1] /root/.gradle/caches/transforms-4/5286911722b17ccb3c524ef94a56c473/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+209                android:value="androidx.startup" />
+209-->[androidx.lifecycle:lifecycle-process:2.6.1] /root/.gradle/caches/transforms-4/5286911722b17ccb3c524ef94a56c473/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+210            <meta-data
+210-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+211                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+211-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+212                android:value="androidx.startup" />
+212-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+213        </provider>
+214
+215        <service
+215-->[androidx.room:room-runtime:2.6.1] /root/.gradle/caches/transforms-4/1bf6c08e3e6e5cc0164da085dd885bc6/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+216            android:name="androidx.room.MultiInstanceInvalidationService"
+216-->[androidx.room:room-runtime:2.6.1] /root/.gradle/caches/transforms-4/1bf6c08e3e6e5cc0164da085dd885bc6/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+217            android:directBootAware="true"
+217-->[androidx.room:room-runtime:2.6.1] /root/.gradle/caches/transforms-4/1bf6c08e3e6e5cc0164da085dd885bc6/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+218            android:exported="false" />
+218-->[androidx.room:room-runtime:2.6.1] /root/.gradle/caches/transforms-4/1bf6c08e3e6e5cc0164da085dd885bc6/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+219
+220        <receiver
+220-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+221            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+221-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+222            android:directBootAware="false"
+222-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+223            android:enabled="true"
+223-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+224            android:exported="true"
+224-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+225            android:permission="android.permission.DUMP" >
+225-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+226            <intent-filter>
+226-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+227                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+227-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+227-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+228            </intent-filter>
+229            <intent-filter>
+229-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+230                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+230-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+230-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+231            </intent-filter>
+232            <intent-filter>
+232-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+233                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+233-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+233-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+234            </intent-filter>
+235            <intent-filter>
+235-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+236                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+236-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+236-->[androidx.profileinstaller:profileinstaller:1.3.0] /root/.gradle/caches/transforms-4/76452a3f2564b8922903630805031f80/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+237            </intent-filter>
+238        </receiver>
+239
+240        <service
+240-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /root/.gradle/caches/transforms-4/298d7838dba37b6e4d403423953cf3e0/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+241            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+241-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /root/.gradle/caches/transforms-4/298d7838dba37b6e4d403423953cf3e0/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+242            android:exported="false" >
+242-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /root/.gradle/caches/transforms-4/298d7838dba37b6e4d403423953cf3e0/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+243            <meta-data
+243-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /root/.gradle/caches/transforms-4/298d7838dba37b6e4d403423953cf3e0/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+244                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+244-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /root/.gradle/caches/transforms-4/298d7838dba37b6e4d403423953cf3e0/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+245                android:value="cct" />
+245-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /root/.gradle/caches/transforms-4/298d7838dba37b6e4d403423953cf3e0/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+246        </service>
+247        <service
+247-->[com.google.android.datatransport:transport-runtime:2.2.6] /root/.gradle/caches/transforms-4/8e336470a698456d8bce713685d9061b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+248            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+248-->[com.google.android.datatransport:transport-runtime:2.2.6] /root/.gradle/caches/transforms-4/8e336470a698456d8bce713685d9061b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+249            android:exported="false"
+249-->[com.google.android.datatransport:transport-runtime:2.2.6] /root/.gradle/caches/transforms-4/8e336470a698456d8bce713685d9061b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+250            android:permission="android.permission.BIND_JOB_SERVICE" >
+250-->[com.google.android.datatransport:transport-runtime:2.2.6] /root/.gradle/caches/transforms-4/8e336470a698456d8bce713685d9061b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+251        </service>
+252
+253        <receiver
+253-->[com.google.android.datatransport:transport-runtime:2.2.6] /root/.gradle/caches/transforms-4/8e336470a698456d8bce713685d9061b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+254            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+254-->[com.google.android.datatransport:transport-runtime:2.2.6] /root/.gradle/caches/transforms-4/8e336470a698456d8bce713685d9061b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+255            android:exported="false" />
+255-->[com.google.android.datatransport:transport-runtime:2.2.6] /root/.gradle/caches/transforms-4/8e336470a698456d8bce713685d9061b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+256    </application>
+257
+258</manifest>

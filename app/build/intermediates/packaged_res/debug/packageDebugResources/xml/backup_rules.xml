@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <exclude domain="database" path="notebook.db" />
+    <exclude domain="database" path="todos.db" />
+    <exclude domain="database" path="scenes.db" />
+    <exclude domain="sharedpref" path="olivia_prefs.xml" />
+</full-backup-content>
